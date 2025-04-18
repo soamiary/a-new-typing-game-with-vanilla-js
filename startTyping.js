@@ -67,3 +67,23 @@ closeBtn?.addEventListener('click', () => {
  toggleUserInfo?.addEventListener("click", () => {
    userInfoMobile.classList.toggle("hidden");
  });
+
+ // Gestion du leaderboard mobile
+ const mobileLeaderboard = document.getElementById("mobile-leaderboard");
+ const mobileRankingBtn = document.getElementById("mobile-ranking-btn");
+ const closeLeaderboard = document.getElementById("close-leaderboard");
+
+ mobileRankingBtn?.addEventListener("click", () => {
+   mobileLeaderboard.classList.remove("hidden");
+ });
+
+ closeLeaderboard?.addEventListener("click", () => {
+   mobileLeaderboard?.classList.add("hidden");
+   userInfoMobile?.classList.add("hidden");
+   
+   // Fermer aussi le user-info desktop si visible
+   if (profileBox?.classList.contains("opacity-100")) {
+     profileBox.classList.remove("opacity-100");
+     profileBox.classList.add("opacity-0");
+   }
+ });
