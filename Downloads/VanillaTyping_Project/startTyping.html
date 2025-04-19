@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body class="bg-fuchsia-400">
+    <canvas class="background"></canvas>
+    <div id="particles-js"></div>
+
+<header class="border-none bg-cyan-950">
+    <nav class="container mx-16 flex justify-between py-6 text-amber-50 sm:flex-row w-auto">
+        <div class="text-center sm:text-left">
+            <h1 class="font-bold">Vanilla-Typing</h1>
+        </div>
+        <div class="flex flex-row items-center space-x-6"> 
+            <select id="mode" class="px-4 py-2 rounded bg-gray-700 text-white">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        <div class="hidden sm:flex flex-row justify-between gap-2 items-center">
+            <div class="w-auto text-center text-2xl pr-4">
+                <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+            </div>
+            <div class="flex justify-between gap-6 text-2xl">
+                <a href="#" class="relative group">
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-52 bg-white text-black p-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-50 text-sm">
+                      <h2 class="font-bold text-center mb-2">Top Players</h2>
+                      <ul class="space-y-1">
+                        <li>🥇 Alice – 120 WPM</li>
+                            <li>🥈 Bob – 115 WPM</li>
+                            <li>🥉 Charlie – 110 WPM</li>
+                            <li>David – 100 WPM</li>
+                            <li>Eva – 95 WPM</li>
+                            <li>Frank – 90 WPM</li>
+                      </ul>
+                    </div>
+                  </a>
+
+<label class="relative inline-flex items-center cursor-pointer sm:text-center">
+    <input id="theme-switch-desktop" class="sr-only peer" type="checkbox" />
+    <div
+      class="w-20 h-10 rounded-full bg-gradient-to-r from-fuchsia-400 to-blue-50 peer-checked:from-blue-400 peer-checked:to-indigo-500 transition-all duration-500 after:content-['☀️'] after:absolute after:top-1 after:left-1 after:bg-white after:rounded-full after:h-8 after:w-8 after:flex after:items-center after:justify-center after:transition-all after:duration-500 peer-checked:after:translate-x-10 peer-checked:after:content-['🌙'] after:shadow-md after:text-lg"
+    ></div>
+  </label>
+  
+
+                  
+            
+            </div>
+        </div>
+        <div class="sm:hidden">
+            <input type="checkbox" id="hamburger-checkbox" class="hidden">
+            <label for="hamburger-checkbox" class="text-2xl text-amber-50 cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-90 z-10 transform translate-x-full transition-all duration-300">
+                <div class="flex justify-end p-4">
+                    <label for="hamburger-checkbox" class="text-2xl text-amber-50 cursor-pointer">
+                        <i class="fa-solid fa-times"></i>
+                    </label>
+                </div>
+                <div class="w-auto text-center text-2xl">
+                    <div class="relative text-amber-50 text-2xl mb-4">
+                        <button id="mobile-ranking-btn"><i class="fa-solid fa-ranking-star"></i></button>
+                        <div id="mobile-leaderboard" class="hidden absolute top-10 left-1/2 -translate-x-1/2 w-60 bg-white text-black p-4 rounded-lg shadow-lg z-50 text-sm">
+                          <h2 class="font-bold text-center mb-2">Top Players</h2>
+                          <ul class="max-h-40 overflow-y-auto space-y-1">
+                            <li>🥇 Alice – 120 WPM</li>
+                            <li>🥈 Bob – 115 WPM</li>
+                            <li>🥉 Charlie – 110 WPM</li>
+                            <li>David – 100 WPM</li>
+                            <li>Eva – 95 WPM</li>
+                            <li>Frank – 90 WPM</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                </div>
+                <div class="flex flex-col items-center text-amber-50">
+                    <a href="#" class="text-xl"><i class="fa-solid fa-circle-user"></i></a>
+<label class="relative inline-flex items-center cursor-pointer sm:text-center">
+    <input id="theme-switch-mobile" class="sr-only peer" type="checkbox" />
+    <div
+      class="w-20 h-10 rounded-full bg-gradient-to-r from-fuchsia-400 to-blue-50 peer-checked:from-blue-400 peer-checked:to-indigo-500 transition-all duration-500 after:content-['☀️'] after:absolute after:top-1 after:left-1 after:bg-white after:rounded-full after:h-8 after:w-8 after:flex after:items-center after:justify-center after:transition-all after:duration-500 peer-checked:after:translate-x-10 peer-checked:after:content-['🌙'] after:shadow-md after:text-lg"
+    ></div>
+  </label>
+  
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="text-center mt-60">
+    <section class="mx-auto">       
+    </section>
+</main>
+<script src="startTyping.js"></script>
+</body>
+</html>
