@@ -80,6 +80,28 @@
 
         </nav>
     </header>
+    <main class="m-auto w-full max-w-3xl p-4 mt-28">
+        <section>
+          <div class="text-center space-y-6">
+            <div id="typing-text" class="text-2xl font-mono leading-relaxed mb-4"></div>
+      
+         
+            <button id="start-btn" class="bg-blue-600 text-white px-4 py-2 rounded">
+              Start Typing
+            </button>
+      
+            <button id="restart-btn" class="hidden bg-blue-600 text-white px-5 py-4 rounded">
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+          </div>
+      
+          <div class="flex text-gray-300 mt-6 justify-center gap-32 ml-14">
+            <span id="timer"><i class="fa-solid fa-clock"></i> 60s</span>
+            <span id="wpm"><i class="fa-solid fa-gauge"></i> WPM: 0</span>
+            <span id="accuracy"><i class="fa-solid fa-bullseye"></i> Accuracy: 0%</span>
+          </div>
+        </section>
+      </main>
 <script src="startTyping.js"></script>
 </body>
 </html>
