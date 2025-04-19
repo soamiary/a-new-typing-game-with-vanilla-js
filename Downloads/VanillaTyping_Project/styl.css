@@ -1,0 +1,33 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+body, header {
+  transition: background-color 0.5s ease-in-out;
+}
+  
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+  }
+  
+#mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+#hamburger-checkbox:checked + label + #mobile-menu {
+        transform: translateX(0);
+    }
+/* styl.css */
+
+
+
+
+
